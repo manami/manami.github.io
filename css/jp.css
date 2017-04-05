@@ -1,0 +1,148 @@
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    color: #2B2D35;
+}
+
+/* clearfix */
+.clearfix:after {
+display: block;
+clear: both;
+content: "";
+}
+
+/*
+.clearfix {
+  display: inline-table;
+ }
+*/
+
+.keyvisual-line-top {
+    background-color: #17223A;
+    height: 30px;
+}
+
+.keyvisual {
+  background-position: center;
+  min-height: 434px;
+  background-image: url(../images/keyvisual_photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  height: 100%;
+}
+
+.form-body {
+  display: flex;
+}
+
+.form-input {
+  padding: 8px 15px 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #00386C;
+  border: 1px solid #E4EDF5;
+  border-radius: 4px 0 0 4px;
+  background: #fff;
+  flex: 1;
+}
+
+.form-button {
+  padding: 10px 25px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  text-decoration: none;
+  background-color: #41489B;
+}
+
+.feature {
+  width: 100%;
+  background-color: #F6F7FA;
+}
+
+.feature-link-cell {
+  width: 90%;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.feature li {
+  display: inline-block;
+  width: 17%;
+  padding: 125px 30px 90px 30px;
+  float: left;
+}
+
+.feature li:first-child {
+  background-color: #E7E7FE;
+}
+
+.feature li:nth-child(2) {
+  background-color: #D5D7F3;
+}
+
+.feature li:nth-child(3) {
+ background-color: #E7E7FE;
+}
+
+.feature li:last-child {
+  background-color: #D5D7F3;
+}
+
+.feature-link-cell li  h4 {
+  padding-bottom: 160px;
+}
+
+.feature-link-cell li p {
+  line-height: 2.3;
+  border-radius: 10px;
+  color: white;
+  background-color: #42489C;
+}
+
+.feature-link-cell li p:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #42489C;
+  background-color: #ffffff;
+}
+
+.feature-link-cell .feature-btn {
+  display: block;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+  width: 100%;
+}
+
+.menu li {
+  display: inline-block;
+  float: left;
+  width: 7.69%;
+}
+
+.menu a.global-menu-btn {
+  display: block;
+  padding: 20px 30px;
+  text-align: center;
+  color: white;
+  background-color: #17223A;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+
+.menu a:hover {
+  color: #426484;
+}
