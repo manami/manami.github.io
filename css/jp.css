@@ -35,10 +35,12 @@ content: "";
 
 .form-container {
   height: 100%;
+  padding-top: 220px;
 }
 
 .form-body {
   display: flex;
+  justify-content: center;
 }
 
 .form-input {
@@ -50,7 +52,7 @@ content: "";
   border: 1px solid #E4EDF5;
   border-radius: 4px 0 0 4px;
   background: #fff;
-  flex: 1;
+  min-width: 400px;
 }
 
 .form-button {
