@@ -1,28 +1,22 @@
 html,body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 16px;
-    color: #2B2D35;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  color: #2B2D35;
 }
 
 /* clearfix */
 .clearfix:after {
-display: block;
-clear: both;
-content: "";
+  display: block;
+  clear: both;
+  content: "";
 }
 
-/*
-.clearfix {
-  display: inline-table;
- }
-*/
-
 .keyvisual-line-top {
-    background-color: #17223A;
-    height: 30px;
+  background-color: #17223A;
+  height: 30px;
 }
 
 .keyvisual {
@@ -93,7 +87,7 @@ content: "";
 }
 
 .feature li:nth-child(3) {
- background-color: #E7E7FE;
+  background-color: #E7E7FE;
 }
 
 .feature li:last-child {
