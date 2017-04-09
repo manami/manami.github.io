@@ -204,7 +204,7 @@ html,body {
   letter-spacing: 0.05em;
 }
 
-.company__main-content-bar {
+.company__main-title-bar {
   height: 40px;
   margin-top: 43px;
   padding-left: 20px;
@@ -215,17 +215,17 @@ html,body {
   background-color: #41489A;
 }
 
-.company__background {
+.company__main-content-box {
   padding: 20px;
   background-color: #ffffff;
 }
 
-.company__main-content-bar .company-name {
+.company__main-title-bar .company-name {
   padding-left: 20px;
   display: inline-block; 
 }
 
-.company__main-content-bar .number {
+.company__main-title-bar .number {
   display: inline-block;
 }
 
