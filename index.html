@@ -5,28 +5,38 @@
     <title>JP</title>
     <link rel="stylesheet" type="text/css" href="./css/jp.css">
     <link rel="stylesheet" type="text/css" href="./css/css_reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="keyvisual-line-top">
-    </div>
-    <div class="keyvisual">
-      <div class="form-container">
-        <form id="" class="" method="">
-          <div class="form-body">
-            <input class="form-input" name="" type="" placeholder="Company Name, Job title, Language, Keywords, etc">
-            <button class="form-button" type="submit">Search</button>
+    <div class="top-banner">
+      <div class="banner-content clearfix">
+        <div class="logo">
+          <img class="dog-logo" alt="dog-logo" src="./images/shiba_dog.svg">
+        </div>
+        <div class="search-form">
+          <div class="main-search-text">
+            <h1>Hi. What are you looking for?</h1>
           </div>
-        </form>
+          <div class="main-search-form">
+            <form id="xxx" class="xxx" method="GET">
+              <div class="form-body">
+                <input class="form-input" name="xxx" type="text" placeholder="Company Name, Job title, Language, Keywords, etc">
+                <button class="form-button" type="submit">Search</button>
+              </div>
+            </form>
+          </div> <!-- main-search-form -->
+        </div> <!-- search-form -->
       </div>
     </div>
+
     <section class="feature">
       <div class="feature-link-cell">
         <ul class="clearfix">
           <li>
             <h4>English Friendly</h4>
-              <a href="xxx.html" class="feature-btn">
-                <p>See More</p>
-              </a>
+            <a href="xxx.html" class="feature-btn">
+              <p>See More</p>
+            </a>
           </li>
           <li>
             <h4>下限年収600万円以上</h4>
@@ -49,6 +59,7 @@
         </ul>
       </div>
     </section>
+
     <nav>
       <ul class="menu clearfix">
         <li>
@@ -92,5 +103,49 @@
         </li>
       </ul>
     </nav>
+
+    <div class="company-list clearfix">
+      <div class="company-list__filters">
+        <div class="sort-box">
+        </div>
+        <div class="detail-filters">
+        </div>
+      </div>
+      <div class="company-list__companies">
+        <div class="company-list__main-title">
+          <h1>Ranking by JP companies</h1>
+        </div>
+        <div class="company">
+          <div class="company__main-content-bar">
+            <h2 class="number">1</h2><h2 class="company-name">Google</h2>
+          </div>
+          <div class="company__background clearfix">
+            <div class="company__logo">
+              <img src="./images/logo_company.png" alt="company-logo">
+            </div>
+            <div class="company__rating">
+              4.4
+            </div>
+            <div class="company__description">
+              <h4>“Good place to work for.”</h4>
+            </div>
+            <div class="company__feature-list">
+              <div class="company__feature--salary">
+                <i class="fa fa-money fa-2x"></i> 
+                <p class="salary">年収 000万円〜000万円</p>
+              </div>
+              <div class="company__feature--job-type">
+              </div>
+              <div class="company__feature--area">
+              </div>
+            </div>
+            <div class="company__feature-list--sub">
+              <div class="company__feature--content">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

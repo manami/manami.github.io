@@ -1,10 +1,14 @@
 html,body {
   box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 16px;
   color: #2B2D35;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* clearfix */
@@ -14,22 +18,40 @@ html,body {
   content: "";
 }
 
-.keyvisual-line-top {
-  background-color: #17223A;
-  height: 30px;
-}
-
-.keyvisual {
+.top-banner {
   background-position: center;
-  min-height: 434px;
-  background-image: url(../images/keyvisual_photo.png);
+  min-height: 547px;
+  background-image: url(../images/top-banner_photo.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: -8px;
+}
+
+.banner-content {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 123px;
 }
 
 .form-container {
   height: 100%;
-  padding-top: 220px;
+}
+
+.logo {
+  width: 300px;
+  float: left;
+}
+
+.search-form {
+  padding-top: 100px;
+  float: left;
+}
+
+.main-search-text {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 66px;
+  color: white;
 }
 
 .form-body {
@@ -58,6 +80,7 @@ html,body {
   border-radius: 0 4px 4px 0;
   text-decoration: none;
   background-color: #41489B;
+  cursor: pointer;
 }
 
 .feature {
@@ -141,4 +164,94 @@ html,body {
 
 .menu a:hover {
   color: #426484;
+}
+
+.company-list {
+  padding: 150px 250px;
+  width: 1680px;
+  background-color: #F8F8FB;
+}
+
+.company-list__filters {
+  width: 18.45%;
+  float: left;
+  margin-right: 0.59%;
+}
+
+.sort-box {
+  height: 50px;
+  background-color: #ffffff;
+  border: solid 1px #888888;
+  border-radius: 5px;
+}
+
+.detail-filters {
+  height: 1400px;
+  margin-top: 40px;
+  background-color: white;
+}
+
+.company-list__companies {
+  width: 51.19%;
+  float: left;
+  display: inline-block;
+}
+
+.company-list__main-title {
+  color: #41489B;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.company__main-content-bar {
+  height: 40px;
+  margin-top: 43px;
+  padding-left: 20px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  line-height: 40px;
+  color: #ffffff;
+  background-color: #41489A;
+}
+
+.company__background {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.company__main-content-bar .company-name {
+  padding-left: 20px;
+  display: inline-block; 
+}
+
+.company__main-content-bar .number {
+  display: inline-block;
+}
+
+.company__logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.company__rating {
+}
+
+.company__description {
+  margin-top: 20px;
+}
+
+.company__feature-list {
+  padding-top: 55px;
+}
+
+.company__feature--salary .fa {
+  float: left;
+  padding-right: 15px;
+}
+
+.comppany__feature--salary .salary {
+  float: left;
+  line-height: 25px;
+  display: inline-block;
 }
