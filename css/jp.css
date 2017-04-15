@@ -229,6 +229,11 @@ html,body {
   background-color: #ffffff;
 }
 
+.company__main-info-box {
+  width: calc(100% - 207px);
+  float: left;
+}
+
 .company__main-content-sub-box {
 }
 
@@ -247,7 +252,6 @@ html,body {
 }
 
 .company__rating {
-  float: left;
   padding-right: 15px;
 }
 
@@ -257,10 +261,6 @@ html,body {
 
 .company__rating .fa {
   float: left;
-}
-
-.company__description {
-  margin-top: 20px;
 }
 
 .company__feature-list {
