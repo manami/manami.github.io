@@ -3,7 +3,6 @@ html,body {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
-  margin: 0;
   padding: 0;
   border: 0;
   font-size: 16px;
@@ -16,6 +15,12 @@ html,body {
   display: block;
   clear: both;
   content: "";
+}
+
+/*複数セレクタを選択*/
+.main {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .top-banner {
@@ -167,9 +172,14 @@ html,body {
 }
 
 .company-list {
-  padding: 150px 250px;
-  width: 1680px;
   background-color: #F8F8FB;
+}
+
+.company-list-container {
+  margin: 0 auto;
+  padding: 8.9% 14.8%;
+  margin-right: 0;
+  width: 100%;
 }
 
 .company-list__filters {
@@ -194,7 +204,6 @@ html,body {
 .company-list__companies {
   width: 51.19%;
   float: left;
-  display: inline-block;
 }
 
 .company-list__main-title {
@@ -220,6 +229,9 @@ html,body {
   background-color: #ffffff;
 }
 
+.company__main-content-sub-box {
+}
+
 .company__main-title-bar .company-name {
   padding-left: 20px;
   display: inline-block; 
@@ -235,6 +247,16 @@ html,body {
 }
 
 .company__rating {
+  float: left;
+  padding-right: 15px;
+}
+
+.company__rating .rating-score {
+  float: left;
+}
+
+.company__rating .fa {
+  float: left;
 }
 
 .company__description {
@@ -242,16 +264,45 @@ html,body {
 }
 
 .company__feature-list {
-  padding-top: 55px;
+  padding-top: 35px;
+  padding-bottom: 5px;
 }
 
-.company__feature--salary .fa {
+.company__feature .fa {
   float: left;
   padding-right: 15px;
 }
 
-.comppany__feature--salary .salary {
+.company__feature .salary {
   float: left;
-  line-height: 25px;
+  line-height: 30px;
+  padding-right: 20px;
   display: inline-block;
+}
+
+.company__feature p {
+  float: left;
+  padding-right: 20px;
+}
+
+.company__feature-list--sub {
+  display: inline-block; 
+  padding: 20px;
+  background-color: #E8E9FD;
+  line-height: 19px;
+}
+
+.company__feature--sub {
+  float: left;
+  width: 33.3%;
+}
+
+.company__feature--sub .fa {
+  float: left;
+  padding-right: 10px;
+}
+
+.company__feature--sub p{
+  float: left;
+  padding-right: 30px;
 }
