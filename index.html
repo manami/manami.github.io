@@ -109,17 +109,106 @@
         <div class="company-list-container clearfix">
           <div class="company-list__filters">
             <div class="sort-box">
+              <select class="sort-list" name="sort-list">
+                <option value="xxx" selected>並び替え</option>
+                <option value="xxx">給料の高い順</option>
+                <option value="xxx">給料の安い順</option>
+                <option value="xxx">評価の高い順</option>
+                <option value="xxx">評価の低い順</option>
+              </select>
+              <i class="fa fa-angle-down fa-2x"></i>
             </div>
             <div class="detail-filters">
+              <h1>Detail Search</h1>
+              <h2>Add Keywords</h2>
+              <div class="detail-filters__keywords-box">
+              </div>
+              <div class="detail-filters__working-conditions">
+                <ul>
+                  <li>
+                    <p class="working-conditions">Working conditions:</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>English friendly</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>Forigne offices</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>Public</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>Remote OK</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="detail-filters__employees-status">
+                <select class="employees-status" name="employees-status">
+                  <option value="xxx" selected>employee's status</option>
+                  <option value="xxx">中途採用</option>
+                  <option value="xxx">新卒</option>
+                  <option value="xxx">業務委託</option>
+                  <option value="xxx">派遣社員</option>
+                </select>
+                <i class="fa fa-angle-down fa-2x"></i>
+              </div>
+              <div class="detail-filters__company-size">
+                <select class="company-size" name="company-size">
+                  <option value="xxx" selected>company's size</option>
+                  <option value="xxx">0-5人</option>
+                  <option value="xxx">5-10人</option>
+                  <option value="xxx">業務</option>
+                  <option value="xxx">派遣社員</option>
+                </select>
+                <i class="fa fa-angle-down fa-2x"></i>
+              </div>
+              <div class="detail-filters__salary">
+                <select class="salary" name="salary">
+                  <option value="xxx" selected>salary</option>
+                  <option value="xxx">0-5人</option>
+                  <option value="xxx">5-10人</option>
+                  <option value="xxx">業務</option>
+                  <option value="xxx">派遣社員</option>
+                </select>
+                <i class="fa fa-angle-down fa-2x"></i>
+              </div>
+              <div class="detail-filters__location">
+                <ul>
+                  <li>
+                    <p class="location">Location:</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>Tokyo</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>Osaka</p>
+                  </li>
+                  <li class="check-box clearfix">
+                    <input type="checkbox" name="check-box" value="something">
+                    <p>北陸･甲信越</p>
+                  </li>
+                </ul>
+                <a href="xxx.html" class="link-location">See all locations</a>
+              </div>
+              <div class="detail-filters__reset-submit-btn clearfix">
+                <button type="reset" class="btn-reset">クリア</button>
+                <button type="submit" class="btn-submit">完了</button>
+              </div>
             </div>
           </div>
           <div class="company-list__companies">
             <div class="company-list__main-title">
-              <h1>Ranking by JP companies</h1>
+              <h1>Ranking by JP Companies</h1>
             </div>
             <div class="company">
               <div class="company__main-title-bar">
-                <h2 class="number">1</h2><h2 class="company-name">Google</h2>
+                <h2 class="number">1</h2><h2 class="company-name">google</h2>
               </div>
               <div class="company__main-content-box clearfix">
                 <div class="company__main-content-sub-box clearfix">
@@ -136,19 +225,93 @@
                       <i class="fa fa-star-half-empty"></i>
                     </div>
                     <div class="company__description clearfix">
-                      <h4>“Good place to work for.”</h4>
-                      <p>Google provides great work environment and get to work with one of the smartrst people in your life. You will not be disappointed to work at Google.  See all Reviews</p>
+                      <h4>“good place to work for.”</h4>
+                      <p>google provides great work environment and get to work with one of the smartrst people in your life. you will not be disappointed to work at google. </p>
+                      <a href="xxx.html" class="linkcolor">see all reviews</a>
                     </div>
                   </div>
                 </div>
                 <div class="company__feature-list clearfix">
                   <div class="company__feature clearfix">
                     <i class="fa fa-money fa-2x"></i>
-                    <p class="salary">年収 000万円〜000万円</p>
+                    <p class="salary-range">年収xxx万円〜xxx万円</p>
                   </div>
                   <div class="company__feature clearfix">
                     <i class="fa fa-male fa-2x"></i>
-                    <p>Webアプリケーションエンジニア</p>
+                    <p>webアプリケーションエンジニア</p>
+                  </div>
+                  <div class="company__feature clearfix">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <p>東京</p>
+                  </div>
+                </div>
+                <div class="company__feature-list--sub clearfix">
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                  <div class="company__feature--sub clearfix">
+                    <i class="fa fa-check"></i>
+                    <p>下限年収600万円以上</p>
+                  </div>
+                </div>
+              </div>
+              <div class="company__main-title-bar">
+                <h2 class="number">1</h2><h2 class="company-name">google</h2>
+              </div>
+              <div class="company__main-content-box clearfix">
+                <div class="company__main-content-sub-box clearfix">
+                  <div class="company__logo">
+                    <img src="./images/logo_company.png" alt="company-logo">
+                  </div>
+                  <div class="company__main-info-box clearfix">
+                    <div class="company__rating clearfix">
+                      <p class="rating-score">4.4</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-empty"></i>
+                    </div>
+                    <div class="company__description clearfix">
+                      <h4>“good place to work for.”</h4>
+                      <p>google provides great work environment and get to work with one of the smartrst people in your life. you will not be disappointed to work at google. </p>
+                      <a href="xxx.html" class="linkcolor">see all reviews</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="company__feature-list clearfix">
+                  <div class="company__feature clearfix">
+                    <i class="fa fa-money fa-2x"></i>
+                    <p class="salary-range">年収xxx万円〜xxx万円</p>
+                  </div>
+                  <div class="company__feature clearfix">
+                    <i class="fa fa-male fa-2x"></i>
+                    <p>webアプリケーションエンジニア</p>
                   </div>
                   <div class="company__feature clearfix">
                     <i class="fa fa-map-marker fa-2x"></i>
@@ -192,8 +355,8 @@
               </div>
             </div>
           </div>
-        </div> <!--company-list-container-->
+        </div> <!-- company-list-container -->
       </div>
-    </div> <!--main-->
+    </div> <!-- main -->
   </body>
 </html>
