@@ -94,19 +94,21 @@ ul {
 
 .feature {
   width: 100%;
+  height: 435px;
   background-color: #F6F7FA;
 }
 
 .feature-link-cell {
-  width: 90%;
+  height: 100%;
+  width: 100%;
   text-align: center;
-  padding: 0 10%;
 }
 
 .feature li {
   display: inline-block;
-  width: 17%;
-  padding: 125px 30px 90px 30px;
+  height: 100%;
+  width: 20%;
+  padding: 0 30px;
   float: left;
 }
 
@@ -127,7 +129,7 @@ ul {
 }
 
 .feature-link-cell li  h4 {
-  padding-bottom: 160px;
+  padding: 120px 0;
 }
 
 .feature-link-cell li p {
@@ -214,9 +216,9 @@ ul {
 }
 
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .detail-filters {
@@ -391,7 +393,7 @@ input[type="checkbox"] {
   float: left;
   width: 33.3%;
   line-height: 1.9;
-/*  padding-top: 10px; */
+  /*  padding-top: 10px; */
 }
 
 .company__feature--sub .fa {
@@ -460,15 +462,15 @@ input[type="checkbox"] {
 }
 
 .btn-reset {
-    float: left;
-    padding-right: 10px;
-    margin-right: 10%;
-    line-height: 3;
-    color: #ffffff;
-    border: 1px solid #aaa;
-    width: 45%;
-    background: #aaa;
-    cursor: pointer;
+  float: left;
+  padding-right: 10px;
+  margin-right: 10%;
+  line-height: 3;
+  color: #ffffff;
+  border: 1px solid #aaa;
+  width: 45%;
+  background: #aaa;
+  cursor: pointer;
 }
 
 .btn-submit {
@@ -481,3 +483,8 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+.feature-link-cell__list {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
