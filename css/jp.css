@@ -129,7 +129,7 @@ ul {
 }
 
 .feature-link-cell li  h4 {
-  padding: 120px 0;
+  padding-bottom: 20px;
 }
 
 .feature-link-cell li p {
@@ -149,6 +149,15 @@ ul {
 .feature-link-cell .feature-btn {
   display: block;
   text-decoration: none;
+}
+
+.feature-link-cell__list {
+padding: 50px 12.5px 65px;
+}
+
+.feature-link-cell__list__picture img {
+  height: auto;
+  width: 100%;
 }
 
 .menu {
