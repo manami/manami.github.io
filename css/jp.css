@@ -10,6 +10,10 @@ html,body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
 }
@@ -27,9 +31,64 @@ ul {
   margin: 0 auto;
 }
 
+header .menu-container{
+  position: absolute;
+  z-index: 9;
+  background-color: #101C38;
+}
+
+.menu-container,
+.navbar-nav {
+  display: table-cell;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.row-menu {
+  padding: 0 30px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.row-menu-inner {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%; 
+}
+
+.logo-container {
+  position: relative;
+  min-width: 200px;
+  padding-right: 20px;
+}
+
+.main-logo {
+  max-width: 170px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo-image img {
+  width: 170px;
+  padding-top: 12px;
+}
+
+.main-menu-container {
+    border-color: rgba(234,234,234,0.5);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+}
+
 .top-banner {
+  position: relative;
   background-position: center;
-  min-height: 547px;
   background-image: url(../images/top-banner_photo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +98,7 @@ ul {
 .banner-content {
   width: 940px;
   margin: 0 auto;
-  padding-top: 123px;
+  padding-top: 100px;
 }
 
 .form-container {
@@ -47,12 +106,13 @@ ul {
 }
 
 .logo {
-  width: 300px;
+  width: 270px;
   float: left;
+  padding-bottom: 47px;
 }
 
 .search-form {
-  padding-top: 100px;
+  padding-top: 43px;
   float: left;
 }
 
@@ -94,7 +154,6 @@ ul {
 
 .feature {
   width: 100%;
-  height: 435px;
   background-color: #F6F7FA;
 }
 
@@ -104,11 +163,19 @@ ul {
   text-align: center;
 }
 
+.feature-link-cell h2 {
+  padding: 20px 0;
+  font-size: 28px;
+  line-height: 1.33;
+  color: #17223A;
+  font-weight: bold;
+  margin: 0;
+}
+
 .feature li {
-  display: inline-block;
-  height: 100%;
-  width: 20%;
-  padding: 0 30px;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 30px;
   float: left;
 }
 
@@ -128,9 +195,42 @@ ul {
   background-color: #D5D7F3;
 }
 
-.feature-link-cell li  h4 {
-  padding-bottom: 20px;
+.feature-link-image__english {
+  height: 135px;
+  background:
+  /* top, transparent red */
+  linear-gradient(
+  rgba(25, 0, 0, .5),
+  rgba(25, 0, 0, .5)
+  ),
+  url('../images/english.png');
+  /* bottom, image */
+  background-size: cover;
 }
+
+
+.feature-link-image__salary {
+  height: 135px;
+  background:
+  /* top, transparent red */
+  linear-gradient(
+  rgba(25, 0, 0, .5),
+  rgba(25, 0, 0, .5)
+  ),
+  url('../images/salary.jpg');
+  /* bottom, image */
+  background-size: cover;
+}
+
+.feature-link-text {
+  color: #fff;
+  text-align: center;
+  height: 135px;
+  /*line-height: 135px;*/
+  padding-top: 60px;
+  overflow: hidden;
+}
+
 
 .feature-link-cell li p {
   line-height: 2.3;
@@ -147,17 +247,12 @@ ul {
 }
 
 .feature-link-cell .feature-btn {
-  display: block;
+  /*display: block;*/
+  padding-top: 20px;
+}
+
+.feature-link-cell a {
   text-decoration: none;
-}
-
-.feature-link-cell__list {
-padding: 50px 12.5px 65px;
-}
-
-.feature-link-cell__list__picture img {
-  height: auto;
-  width: 100%;
 }
 
 .menu {
@@ -192,15 +287,15 @@ padding: 50px 12.5px 65px;
 
 .company-list-container {
   margin: 0 auto;
-  padding: 8.9% 14.8%;
+  padding: 8% 10%;
   margin-right: 0;
   width: 100%;
 }
 
 .company-list__filters {
-  width: 18.45%;
+  width: 28%;
   float: left;
-  margin-right: 0.59%;
+  margin-right: 1%;
 }
 
 .sort-box {
@@ -286,19 +381,19 @@ input[type="checkbox"] {
 }
 
 .company-list__companies {
-  width: 51.19%;
+  width: 71%;
   float: left;
 }
 
 .company-list__main-title {
   color: #41489B;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
 
 .company__main-title-bar {
-  margin-top: 43px;
+  margin-top: 15px;
   letter-spacing: 0.2em;
   padding: 5px 20px;
   color: #ffffff;
@@ -309,7 +404,7 @@ input[type="checkbox"] {
 
 .company__main-title-bar h2 {
   padding-left: 20px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .company__main-content-box {
@@ -393,7 +488,7 @@ input[type="checkbox"] {
 }
 
 .company__feature-list--sub {
-  display: inline-block; 
+  display: inline-block;
   padding: 20px;
   background-color: #E8E9FD;
 }
@@ -415,7 +510,7 @@ input[type="checkbox"] {
   float: left;
 }
 
-.employees-status, 
+.employees-status,
 .company-size,
 .salary {
   height: 50px;
@@ -493,7 +588,6 @@ input[type="checkbox"] {
 }
 
 .feature-link-cell__list {
+  margin: 0 auto 40px;
   max-width: 1200px;
-  margin: 0 auto;
-  height: 100%;
 }
