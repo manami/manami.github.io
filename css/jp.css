@@ -349,20 +349,12 @@ ul {
   float: left;
 }
 
-.feature li:first-child {
-  background-color: #E7E7FE;
-}
-
-.feature li:nth-child(2) {
+.feature li:nth-child(2n) {
   background-color: #D5D7F3;
 }
 
-.feature li:nth-child(3) {
+.feature li:nth-child(2n+1) {
   background-color: #E7E7FE;
-}
-
-.feature li:last-child {
-  background-color: #D5D7F3;
 }
 
 .feature-link-image__english {
